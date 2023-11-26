@@ -1,0 +1,56 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+header {
+  text-align: center;
+  background-color: #f4f4d8;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px; /* Adjust as needed */
+  z-index: 10;
+}
+
+footer {
+  text-align: center;
+  background-color: #f4f4d8;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px; /* Adjust as needed */
+  z-index: 10;
+  overflow-y: auto;
+}
+
+iframe {
+  display: block;
+  width: 100%;
+  height: calc(100vh - 110px); /* 100px = 60px header + 50px footer */
+  position: absolute;
+  top: 60px; /* Same as header height */
+  left: 0;
+  right: 0;
+  border: none;
+  overflow-y: auto;
+}
+
+#cesiumContainer, #googleMap {
+  height: calc(100vh - 100px);
+  width: 100%;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  bottom: 50px;
+  right: 0;
+  overflow: hidden;
+}
