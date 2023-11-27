@@ -5,6 +5,13 @@ document.addEventListener('DOMContentLoaded', function() {
 const viewer = new Cesium.Viewer("cesiumContainer", {
     globe: false,
 });
+
+  try {
+  const tileset = await Cesium.createGooglePhotorealistic3DTileset();
+  viewer.scene.primitives.add(tileset);
+} catch (error) {
+  console.log(`Failed to load tileset: ${error}`);
+}
   
   // Fly to Port of Long Beach
   viewer.camera.flyTo({
