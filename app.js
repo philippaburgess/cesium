@@ -1,15 +1,9 @@
 // Grant CesiumJS access to your ion assets
 document.addEventListener('DOMContentLoaded', function() {
 Cesium.Ion.defaultAccessToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI4ODMwMDg5ZC0wYjJlLTQ2NmEtOTg5Ny1iMzI0NzNjMjU5YjYiLCJpZCI6MTczNDE4LCJpYXQiOjE2OTk4NTI5NDh9.VtT7XV6WVveRJijzrNyZLOsooZ6p14yChusoetLIL54";
-
-const viewer = new Cesium.Viewer("cesiumContainer", {
-  // Use Cesium World Terrain
-  terrainProvider: Cesium.createWorldTerrain(),
-  // Improve performance by not automatically requesting render
-  requestRenderMode: true,
-  // Reduce the maximum number of terrain tiles to load (for performance)
-  maximumScreenSpaceError: 16,
-    globe:false,
+  const viewer = new Cesium.Viewer("cesiumContainer", {
+    // These options turn off extra Cesium features that are not needed.
+    globe: false,
     skyAtmosphere: new Cesium.SkyAtmosphere(),
     sceneModePicker: false,
     baseLayerPicker: false,
@@ -19,9 +13,10 @@ const viewer = new Cesium.Viewer("cesiumContainer", {
     navigationHelpButton: false,
     timeline: false,
     animation: false,
+    requestRenderMode: true // Optimize rendering
   });
 
-const tileset = new Cesium.Cesium3DTileset({
+  const tileset = new Cesium.Cesium3DTileset({
     url: Cesium.IonResource.fromAssetId(2275207) // Asset ID for the photorealistic 3D Tiles
   });
 
@@ -42,4 +37,3 @@ const tileset = new Cesium.Cesium3DTileset({
     console.error("Error loading Google Photorealistic 3D Tiles:", error);
   });
 });
-
