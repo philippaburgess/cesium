@@ -9,7 +9,19 @@ const viewer = new Cesium.Viewer("cesiumContainer", {
   requestRenderMode: true,
   // Reduce the maximum number of terrain tiles to load (for performance)
   maximumScreenSpaceError: 16,
-});
+  const viewer = new Cesium.Viewer("cesiumContainer", {
+    // These options turn off extra Cesium features that are not needed.
+    globe: true,
+    skyAtmosphere: new Cesium.SkyAtmosphere(),
+    sceneModePicker: false,
+    baseLayerPicker: false,
+    geocoder: false,
+    homeButton: false,
+    infoBox: false,
+    navigationHelpButton: false,
+    timeline: false,
+    animation: false,
+  });
 
 // Adding the 3D Tiles Photorealistic layer
 viewer.scene.primitives.add(new Cesium.Cesium3DTileset({
