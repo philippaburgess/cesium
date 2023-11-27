@@ -37,8 +37,10 @@ try {
   });
 });
 
-viewer.dataSources.add(Cesium.KmlDataSource.load('./Health_Impact_Points_POLB_OptimizedD2CANCER.kml', {
-  camera: viewer.scene.camera,
-  canvas: viewer.scene.canvas
-}));
+var featureLayer = new Cesium.ArcGisFeatureServer({
+  url: 'https://services1.arcgis.com/ZIL9uO234SBBPGL7/arcgis/rest/services/Health_Impact_Points_POLB_OptimizedD2CANCER/SceneServer'
+});
+
+viewer.dataSources.add(featureLayer);
+
 
