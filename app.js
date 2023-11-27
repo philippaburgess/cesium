@@ -15,6 +15,9 @@ document.addEventListener('DOMContentLoaded', function() {
     animation: false,
   });
 
+const google3DTileset = new Cesium3DTileset({ url: IonResource.fromAssetId(2275207) });
+viewer.scene.primitives.add(google3DTileset);
+
   // Fly to Port of Long Beach
   viewer.camera.flyTo({
     destination: Cesium.Cartesian3.fromDegrees(-118.2153, 33.7550, 1000),
