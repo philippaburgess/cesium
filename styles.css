@@ -32,9 +32,6 @@ footer {
   overflow-y: auto;
 }
 
-
-@import url('path/to/bucket.css');
-
 /* Full size container for Cesium */
 .fullSize {
   width: 100%;
