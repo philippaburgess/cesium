@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
   // Set your Cesium Ion default access token.
   Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI4ODMwMDg5ZC0wYjJlLTQ2NmEtOTg5Ny1iMzI0NzNjMjU5YjYiLCJpZCI6MTczNDE4LCJpYXQiOjE2OTk4NTI5NDh9.VtT7XV6WVveRJijzrNyZLOsooZ6p14yChusoetLIL54';
-
   const viewer = new Cesium.Viewer('cesiumContainer', {
     baseLayerPicker: false,
     homeButton: false,
@@ -14,12 +13,13 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   const imageryLayer = viewer.imageryLayers.addImageryProvider(new Cesium.IonImageryProvider({
-    assetId: 3954 // 
+    assetId: 2275207 // The ID for the photorealistic 3D Tiles
   }));
 
   const tileset = viewer.scene.primitives.add(new Cesium.Cesium3DTileset({
-    url: Cesium.IonResource.fromAssetId(2275207) // Replace with your actual 3D Tiles asset ID
+    url: Cesium.IonResource.fromAssetId(2275207) // The ID for the photorealistic 3D Tiles
   }));
+
   tileset.readyPromise.then(function() {
     viewer.zoomTo(tileset);
   }).catch(function(error) {
@@ -35,4 +35,3 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 });
-  
