@@ -21,6 +21,10 @@ const viewer = new Cesium.Viewer("cesiumContainer", {
     animation: false,
   });
 
+  const tileset = new Cesium.Cesium3DTileset({
+    url: Cesium.IonResource.fromAssetId(2275207) // Asset ID for the photorealistic 3D Tiles
+  });
+
 // Adding the 3D Tiles Photorealistic layer
 viewer.scene.primitives.add(new Cesium.Cesium3DTileset({
   url: Cesium.IonResource.fromAssetId(2275207)
