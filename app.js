@@ -15,6 +15,8 @@ document.addEventListener('DOMContentLoaded', function() {
     requestRenderMode: true, // Optimize rendering
   });
 
+viewer.scene.globe.show = true;
+  
   // Fly to Port of Long Beach with a duration of 3 seconds to ensure you can see the transition
   viewer.camera.flyTo({
     destination: Cesium.Cartesian3.fromDegrees(-118.2153, 33.7550, 1000),
