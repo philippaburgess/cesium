@@ -12,10 +12,6 @@ document.addEventListener('DOMContentLoaded', function() {
     requestRenderMode: true,
   });
 
-  const imageryLayer = viewer.imageryLayers.addImageryProvider(new Cesium.IonImageryProvider({
-    assetId: 2275207 // The ID for the photorealistic 3D Tiles
-  }));
-
   const tileset = viewer.scene.primitives.add(new Cesium.Cesium3DTileset({
     url: Cesium.IonResource.fromAssetId(2275207) // The ID for the photorealistic 3D Tiles
   }));
