@@ -7,6 +7,32 @@ Cesium.Ion.defaultAccessToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOi
   const viewer = new Cesium.Viewer('cesiumContainer', {
     terrainProvider: Cesium.createWorldTerrain(),
 
+  
+const viewer = new Cesium.Viewer('cesiumContainer', {
+    imageryProvider: new Cesium.IonImageryProvider({
+      assetId: 2275207  // Asset ID for the photorealistic 3D Tiles
+    }),
+    terrainProvider: new Cesium.CesiumTerrainProvider({
+      url: Cesium.IonResource.fromAssetId(1)  // Cesium World Terrain
+    }),
+    baseLayerPicker: false,
+    geocoder: false,
+    homeButton: false,
+    infoBox: false,
+    navigationHelpButton: false,
+    sceneModePicker: false,
+    timeline: false,
+    animation: false,
+    requestRenderMode: true
+  });
+
+  const tileset = viewer.scene.primitives.add(new Cesium.Cesium3DTileset({
+    url: Cesium.IonResource.fromAssetId(2275207)  // Again, the Asset ID for the photorealistic 3D Tiles
+  }));
+
+  tileset.readyPromise.then(function(tileset) {
+    viewer.zoomTo(tileset);
+
    
 try {
   const tileset = await Cesium.createGooglePhotorealistic3DTileset();
