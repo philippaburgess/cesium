@@ -16,6 +16,16 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
 viewer.scene.globe.show = true;
+
+   const tileset = viewer.scene.primitives.add(new Cesium.Cesium3DTileset({
+    url: Cesium.IonResource.fromAssetId(2275207) 
+  }));
+
+  tileset.readyPromise.then(function() {
+    viewer.zoomTo(tileset);
+  }).otherwise(function(error) {
+    console.error(error);
+  });
   
   // Fly to Port of Long Beach with a duration of 3 seconds to ensure you can see the transition
   viewer.camera.flyTo({
