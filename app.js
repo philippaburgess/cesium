@@ -4,6 +4,15 @@ Cesium.Ion.defaultAccessToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOi
  
   const viewer = new Cesium.Viewer('cesiumContainer', {
     terrainProvider: Cesium.createWorldTerrain(),
+
+   
+try {
+  const tileset = await Cesium.createGooglePhotorealistic3DTileset();
+  viewer.scene.primitives.add(tileset);
+} catch (error) {
+  console.log(`Failed to load tileset: ${error}`);
+}
+
   });
 
   const tileset = new Cesium.Cesium3DTileset({
@@ -11,7 +20,7 @@ Cesium.Ion.defaultAccessToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOi
   });
 
 const viewer = new Cesium.Viewer("cesiumContainer", {
-    globe: true,
+    globe: false,
 });
  
   viewer.scene.globe.enableLighting = true;
