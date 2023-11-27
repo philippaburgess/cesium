@@ -9,9 +9,7 @@ const viewer = new Cesium.Viewer("cesiumContainer", {
   requestRenderMode: true,
   // Reduce the maximum number of terrain tiles to load (for performance)
   maximumScreenSpaceError: 16,
-  const viewer = new Cesium.Viewer("cesiumContainer", {
-    // These options turn off extra Cesium features that are not needed.
-    globe: true,
+    globe:false,
     skyAtmosphere: new Cesium.SkyAtmosphere(),
     sceneModePicker: false,
     baseLayerPicker: false,
