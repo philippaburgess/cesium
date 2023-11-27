@@ -12,7 +12,8 @@ document.addEventListener('DOMContentLoaded', function() {
     navigationHelpButton: false,
     sceneModePicker: false,
     timeline: false,
-    animation: false
+    animation: false,
+    globe: true
   });
 
   // Fly to Port of Long Beach
