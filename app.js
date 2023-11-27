@@ -4,11 +4,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Create the Cesium Viewer with the specified imagery provider and terrain provider.
   const viewer = new Cesium.Viewer('cesiumContainer', {
-    imageryProvider: new Cesium.IonImageryProvider({ assetId: 2 }), // Use your Google Photorealistic 3D Tiles asset ID
+    imageryProvider: new Cesium.IonImageryProvider({ assetId: 2275207 }), // Use your Google Photorealistic 3D Tiles asset ID
     terrainProvider: new Cesium.CesiumTerrainProvider({
       url: Cesium.IonResource.fromAssetId(1) // Use the Cesium World Terrain asset ID
     }),
-    baseLayerPicker: false, // Optionally hide the base layer picker
+    baseLayerPicker: true, // Optionally hide the base layer picker
     // ... other viewer options
   });
 
