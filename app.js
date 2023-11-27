@@ -17,10 +17,6 @@ document.addEventListener('DOMContentLoaded', function() {
     url: Cesium.IonResource.fromAssetId(2275207) // Your Google Photorealistic 3D Tiles asset ID
   }));
 
-  viewer.scene.primitives.add(new Cesium.Cesium3DTileset({
-    url: Cesium.IonResource.fromAssetId(96188) // Your Cesium OSM Buildings asset ID
-  }));
-
   // Fly the camera to the Port of Long Beach.
   viewer.camera.flyTo({
     destination: Cesium.Cartesian3.fromDegrees(-118.2153, 33.7550, 1500),
