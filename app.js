@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     terrainProvider: new Cesium.CesiumTerrainProvider({
       url: Cesium.IonResource.fromAssetId(1) // Use the Cesium World Terrain asset ID
     }),
-    baseLayerPicker: true, // Optionally hide the base layer picker
+    baseLayerPicker: false, // Optionally hide the base layer picker
     // ... other viewer options
   });
 
