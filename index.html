@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Port of Long Beach: Sustainability Analysis</title>
 
-<!-- Include the CesiumJS JavaScript and CSS files from Cesium CDN -->
-<script src="https://cesium.com/downloads/cesiumjs/releases/1.111/Build/Cesium/Cesium.js"></script>
-<link href="https://cesium.com/downloads/cesiumjs/releases/1.111/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+  <!-- Include the CesiumJS JavaScript and CSS files from Cesium CDN -->
+  <script src="https://cesium.com/downloads/cesiumjs/releases/1.111/Build/Cesium/Cesium.js"></script>
+  <link href="https://cesium.com/downloads/cesiumjs/releases/1.111/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
 
   <!-- Link to your custom stylesheet -->
   <link href="./styles.css" rel="stylesheet" type="text/css">
@@ -18,7 +18,7 @@
   </header>
 
   <!-- Cesium Viewer Container -->
- <div id="cesiumContainer" style="width: 100%; height: 100vh; top: 0; left: 0; position: absolute;">
+  <div id="cesiumContainer" style="width: 100%; height: 100vh; position: absolute;"></div> <!-- Ensure this div is closed -->
 
   <footer>
     <p>Part of the Google Immersive Geospatial Challenge + Cesium Certified Developer Microgrant<br>
@@ -27,7 +27,6 @@
   </footer>
 
   <!-- Link to your custom Cesium application script -->
-  <script src="./app.js"></script> 
+  <script src="./app.js"></script>
 </body>
 </html>
-
