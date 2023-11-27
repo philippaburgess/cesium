@@ -9,6 +9,10 @@ Cesium.Ion.defaultAccessToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOi
   const tileset = new Cesium.Cesium3DTileset({
     url: Cesium.IonResource.fromAssetId(2275207) // Asset ID for the photorealistic 3D Tiles
   });
+
+const viewer = new Cesium.Viewer("cesiumContainer", {
+    globe: true,
+});
  
   viewer.scene.globe.enableLighting = true;
 
