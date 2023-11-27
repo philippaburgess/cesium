@@ -19,10 +19,13 @@ document.addEventListener('DOMContentLoaded', function() {
     skyAtmosphere: new Cesium.SkyAtmosphere(), // Manually enable the atmosphere
   });
 
-  // Load the photorealistic 3D Tiles and add it to the scene
-  const tileset = new Cesium.Cesium3DTileset({
-    url: Cesium.IonResource.fromAssetId(2275207) // Use the correct Asset ID for the photorealistic 3D Tiles
-  });
+const viewer = new Viewer('cesiumContainer', {
+    imageryProvider: new Cesium.IonImageryProvider({ assetId: 2275207 }), // Replace with your Google Photorealistic 3D Tiles asset ID
+    terrainProvider: new Cesium.IonTerrainProvider({ assetId: 1 }), // Cesium World Terrain
+    baseLayerPicker: false,
+    geocoder: false,
+});
+
 
   viewer.scene.primitives.add(tileset);
 
