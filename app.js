@@ -17,9 +17,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Fly to Port of Long Beach
   viewer.camera.flyTo({
-    destination: Cesium.Cartesian3.fromDegrees(-118.2153, 33.7550, 15000),
+    destination: Cesium.Cartesian3.fromDegrees(-118.2153, 33.7550, 1000),
     orientation: {
-      heading: Cesium.Math.toRadians(20),
+      heading: Cesium.Math.toRadians(0),
       pitch: Cesium.Math.toRadians(-35),
       roll: 0.0
     }
