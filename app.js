@@ -36,3 +36,10 @@ try {
     console.error(error);
   });
 });
+
+viewer.dataSources.add(Cesium.KmlDataSource.load('./Health_Impact_Points_POLB_OptimizedD2CANCER.kml', {
+  camera: viewer.scene.camera,
+  canvas: viewer.scene.canvas
+}));
+Health_Impact_Points_POLB_OptimizedD2CANCER.kml
+
