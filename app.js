@@ -1,4 +1,4 @@
-window.CESIUM_BASE_URL = r'C:\Users\Philippa Burgess\Documents\Build';
+window.CESIUM_BASE_URL = './Cesium';
 
 document.addEventListener('DOMContentLoaded', function() {
   // Set your Cesium Ion default access token.
