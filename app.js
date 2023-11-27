@@ -6,19 +6,6 @@ const viewer = new Cesium.Viewer("cesiumContainer", {
     globe: false,
 });
   
-  const viewer = new Cesium.Viewer('cesiumContainer', {
-    imageryProvider: new Cesium.IonImageryProvider({ assetId: 2275207 }),
-    terrainProvider: Cesium.createWorldTerrain(),
-    baseLayerPicker: false,
-    geocoder: false,
-    homeButton: false,
-    infoBox: false,
-    navigationHelpButton: false,
-    sceneModePicker: false,
-    timeline: false,
-    animation: false
-  });
-
   // Fly to Port of Long Beach
   viewer.camera.flyTo({
     destination: Cesium.Cartesian3.fromDegrees(-118.2153, 33.7550, 1500),
