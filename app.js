@@ -3,10 +3,8 @@ document.addEventListener('DOMContentLoaded', function() {
   Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI4ODMwMDg5ZC0wYjJlLTQ2NmEtOTg5Ny1iMzI0NzNjMjU5YjYiLCJpZCI6MTczNDE4LCJpYXQiOjE2OTk4NTI5NDh9.VtT7XV6WVveRJijzrNyZLOsooZ6p14yChusoetLIL54';
 
   const viewer = new Cesium.Viewer('cesiumContainer', {
-    imageryProvider: Cesium.createWorldImagery(), // or new Cesium.IonImageryProvider({ assetId: 2275207})
-    terrainProvider: new Cesium.CesiumTerrainProvider({
-      url: Cesium.IonResource.fromAssetId(1) // Replace with the actual terrain asset ID
-    }),
+    imageryProvider: new Cesium.IonImageryProvider({ assetId: 2275207 }),
+    terrainProvider: Cesium.createWorldTerrain(),
     baseLayerPicker: false,
     geocoder: false,
     homeButton: false,
@@ -25,9 +23,5 @@ document.addEventListener('DOMContentLoaded', function() {
       pitch: Cesium.Math.toRadians(-30),
       roll: 0.0
     }
-  });
-});
-
-
   });
 });
