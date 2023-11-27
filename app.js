@@ -21,32 +21,25 @@ const viewer = new Cesium.Viewer("cesiumContainer", {
     animation: false,
   });
 
-  const tileset = new Cesium.Cesium3DTileset({
+const tileset = new Cesium.Cesium3DTileset({
     url: Cesium.IonResource.fromAssetId(2275207) // Asset ID for the photorealistic 3D Tiles
   });
 
-// Adding the 3D Tiles Photorealistic layer
-viewer.scene.primitives.add(new Cesium.Cesium3DTileset({
-  url: Cesium.IonResource.fromAssetId(2275207)
-}));
+  viewer.scene.primitives.add(tileset);
 
-// Fly the camera to the Port of Long Beach
-viewer.camera.flyTo({
-  destination: Cesium.Cartesian3.fromDegrees(-118.2153, 33.7550, 1000),
-  orientation: {
-    heading: Cesium.Math.toRadians(0),
-    pitch: Cesium.Math.toRadians(-35),
-    roll: 0.0
-  }
+  tileset.readyPromise.then(function(tileset) {
+    viewer.zoomTo(tileset);
+    // Set the camera to view the Port of Long Beach
+    viewer.camera.setView({
+      destination: Cesium.Cartesian3.fromDegrees(-118.2153, 33.7550, 1000), // Replace with the desired altitude
+      orientation: {
+        heading: Cesium.Math.toRadians(0),
+        pitch: Cesium.Math.toRadians(-35), // Tilt the view down
+        roll: 0.0
+      }
+    });
+  }).catch(function(error) {
+    console.error("Error loading Google Photorealistic 3D Tiles:", error);
+  });
 });
-
-// Adding the ArcGIS Web Feature Layer as GeoJSON
-const featureLayerUrl = 'https://services1.arcgis.com/ZIL9uO234SBBPGL7/arcgis/rest/services/Health_Impact_Points_POLB_OptimizedD2CANCER/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=geojson';
-
-viewer.dataSources.add(Cesium.GeoJsonDataSource.load(featureLayerUrl, {
-  // Set the marker symbol and color here if needed
-  // Example: pointToLayer and onEachFeature functions
-}));
-
-
 
