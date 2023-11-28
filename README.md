@@ -16,7 +16,7 @@ This project had 3 objectives.
  2) Make a project that would meet the submission guidelines for the Google Immersive Geospatial Challenge
  3) Make a project that is part of the Cesium Certified Developer path that I can finalize and submit based on the foundational work done here. 
 
-**To see an adjacent project: project.philippaburgess.com which was created using Cesium Stories and hosted on GitHub Pages. **
+To see an adjacent project: project.philippaburgess.com which was created using Cesium Stories and hosted on GitHub Pages.
 The final project will be hosted at cesium.philippaburgess.com when it is completed with the data frame and integrated layers. 
 --
 
