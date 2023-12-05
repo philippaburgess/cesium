@@ -1,8 +1,20 @@
-# Port of Long Beach: Sustainability Analysis 
+**Port of Long Beach: Sustainability Analysis **
 
-For 586 - 
+Cesium Certified Developer Microgrant Program 
 
-This is Project 5. 
+Created by Philippa Burgess using Cesium Ion and CesiumJS. 
+
+Deliverables: 
+Video: YOUTUBE 
+Cesium Stories in custom WebApp Hosted on GitHub Pages: cesium.philippaburgess.com 
+Cesium JS in Code Pen using ArcGIS Pro integration: https://codepen.io/Philippa-Burgess/pen/ZEwmRNM
+GitHub: https://github.com/philippaburgess/cesium
+
+-- 
+Study Area and Purpose: 
+
+Ports are interesting because they need to balance economic activity with environmental damage mitigation and the health impact on disproportionately underrepresented communities. The Port of Long Beach stands as a leader in transforming its operations into a green port with the goal of being emission-free by 2035. They are by far the leader in the adoption of clean technologies and operational and community initiatives to reduce air pollution and improve stakeholder engagement. As a graduate student at USC Spatial Sciences Institute in the MS program in Human Security and Geospatial Intelligence, I am building upon my MA in Urban Planning and a GIST Certificate. As such, I find these types of land use projects to be of interest with the goal of helping others to see these challenges and understand how they can participate in supporting dialogue and funding. It was a welcome opportunity to bring this story to life with Photorealistic 3D Tiles powered by Cesium. 
+
 
 Regarding the Jupyter Notebooks: 
 Start with Data_Join then Move to Data Exploration and finally CreatePoints_Polygons
