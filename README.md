@@ -4,11 +4,11 @@ Cesium Certified Developer Microgrant Program
 
 Created by Philippa Burgess using Cesium Ion and CesiumJS. 
 
-Deliverables: 
-Video: YOUTUBE 
-Cesium Stories in custom WebApp Hosted on GitHub Pages: cesium.philippaburgess.com 
-Cesium JS in Code Pen using ArcGIS Pro integration: https://codepen.io/Philippa-Burgess/pen/ZEwmRNM
-GitHub: https://github.com/philippaburgess/cesium
+Deliverables: <br>
+Video: YOUTUBE <br>
+Cesium Stories in custom WebApp Hosted on GitHub Pages: https://cesium.philippaburgess.com <br>
+Cesium JS in Code Pen using ArcGIS Pro integration: https://codepen.io/Philippa-Burgess/pen/ZEwmRNM <br>
+GitHub: https://github.com/philippaburgess/cesium <br>
 
 -- 
 Study Area and Purpose: 
