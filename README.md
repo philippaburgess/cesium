@@ -6,10 +6,11 @@ Created by Philippa Burgess using Cesium Ion and CesiumJS.
 
 Deliverables: <br>
 
-Video: YOUTUBE <br>
+Video: https://youtube.com/live/gX-KUCE0Psc <br>
 Cesium Stories in Web App Hosted on GitHub Pages: https://cesium.philippaburgess.com <br>
 Cesium JS in Code Pen using ArcGIS Pro integration: https://codepen.io/Philippa-Burgess/pen/ZEwmRNM <br>
 GitHub: https://github.com/philippaburgess/cesium <br>
+SSCI 586: GIS Programming and Customization Final Paper: https://docs.google.com/document/d/1DhhCpyrmsCSRj1EBnm4ku5hrsv9DDUt6nf7igftrvEM/edit?usp=sharing <br>
 
 Study Area and Purpose: 
 
@@ -38,6 +39,10 @@ Beyond the challenges of getting some of my code to load correctly, or figuring 
 Discussion: 
 
 I feel like it has taken me a few weeks to really get comfortable with Cesium Ion and CesiumJS, but now that I have, I see unlimited potential. I am really interested in seeing how it works with Unity and Unreal Engine, as well as going further with Google Cloud so that I can gain the skills to launch a web app using the Photorealistic 3D Tiles from within Google. I feel like this project serves as just a beginning to demonstrate that I've learned how to write the code and get an application using Cesium up and running and include custom layers in it. 
+
+Next Steps: 
+
+Now that I have a better understanding of what can be done with JSON and KML files and how to create them, I want to add a data layer on the 'Good Neighbors' page that allows for some interactivy and additional informaion about the local community. I am also really eager to develop other projects using Cesium both with Cesium stories and custom code. I am going to do the Google Cloud Skills Boost tutorials so that I can effectively launch and build with Cesium tiles from within the Google platform. Then next year (2024) I am looking forward to exploring Unity and Unreal Engine and seeing how I can work with this there. I don't yet know much about Blackshark.ai, but also want to learn about what can be done with that Cesium partnership. It is obvious there are many applications and that this is a very exciting time to be part of the Cesium ecosystem. 
 
 ___
 
