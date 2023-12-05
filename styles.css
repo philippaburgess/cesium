@@ -27,7 +27,7 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 35px; /* Adjust as needed */
+  height: 30px; /* Adjust as needed */
   z-index: 10;
   overflow-y: auto;
 }
